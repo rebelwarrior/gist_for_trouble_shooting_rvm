@@ -1,0 +1,55 @@
+[2014-04-11 19:45:43] __rvm_package_extract
+__rvm_package_extract () 
+{ 
+    rvm_debug __rvm_package_extract:$#: "$@";
+    typeset __tempdir __path __file __return;
+    __return=0;
+    __tempdir="$( TMPDIR="${rvm_tmp_path}" mktemp -d -t rvm-tmp.XXXXXXXXX )";
+    __rvm_package_extract_run "$1" "$__tempdir" || __return=$?;
+    if (( __return == 0 )); then
+        for __path in "$__tempdir"/*;
+        do
+            __file="${__path##*/}";
+            if [[ -n "${__file}" && -e "$2/${__file}" ]]; then
+                \rm -rf "$2/${__file}" || __return=$?;
+            fi;
+            \mv -f "${__path}" "$2/" || __return=$?;
+        done;
+    fi;
+    if [[ -n "$__tempdir" ]]; then
+        \rm -rf "$__tempdir";
+    fi;
+    return $__return
+}
+current path: /Users/davidacevedo
+PATH=/usr/local/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/davidacevedo/.rvm/bin
+command(3): __rvm_package_extract /Users/davidacevedo/.rvm/archives/rubygems-2.2.2.tgz /Users/davidacevedo/.rvm/src
++ rvm_debug __rvm_package_extract:2: /Users/davidacevedo/.rvm/archives/rubygems-2.2.2.tgz /Users/davidacevedo/.rvm/src
++ ((  0  ))
++ return 0
++ typeset __tempdir __path __file __return
++ __return=0
+++ TMPDIR=/Users/davidacevedo/.rvm/tmp
+++ mktemp -d -t rvm-tmp.XXXXXXXXX
++ __tempdir=/Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS
++ __rvm_package_extract_run /Users/davidacevedo/.rvm/archives/rubygems-2.2.2.tgz /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS
++ [[ -d /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS ]]
++ case "$1" in
++ [[ -n '' ]]
++ __rvm_tar xzf /Users/davidacevedo/.rvm/archives/rubygems-2.2.2.tgz -C /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS
++ tar xzf /Users/davidacevedo/.rvm/archives/rubygems-2.2.2.tgz -C /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS
++ __rvm_fix_group_permissions /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS/rubygems-2.2.2
++ umask -S
++ __rvm_grep g=rw
++ GREP_OPTIONS=
++ grep g=rw
++ return 1
++ ((  __return == 0  ))
++ for __path in '"$__tempdir"/*'
++ __file=rubygems-2.2.2
++ [[ -n rubygems-2.2.2 ]]
++ [[ -e /Users/davidacevedo/.rvm/src/rubygems-2.2.2 ]]
++ mv -f /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS/rubygems-2.2.2 /Users/davidacevedo/.rvm/src/
++ [[ -n /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS ]]
++ rm -rf /Users/davidacevedo/.rvm/tmp/rvm-tmp.XXXXXXXXX.YkI8RypS
++ return 0

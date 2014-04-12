@@ -1,0 +1,98 @@
+[2014-04-11 19:45:22] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /Users/davidacevedo
+PATH=/usr/local/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/davidacevedo/.rvm/bin
+command(35): __rvm_set_executable /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ast /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ast.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/gem /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/gem.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/irb /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/irb.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jgem /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jgem.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb_swing /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb_swing.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.bash /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll.new /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe.new /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.sh /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyc /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyc.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyd.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe.new /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rake /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rake.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rdoc /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rdoc.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ri /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ri.bat /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ruby /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/testrb /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/testrb.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ast ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ast.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ast.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/gem ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/gem.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/gem.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/irb ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/irb.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/irb.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jgem ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jgem.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jgem.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb_swing ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb_swing.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jirb_swing.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.bash ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll.new ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.dll.new
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe.new ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.exe.new
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jruby.sh ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyc ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyc.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyc.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyd.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyd.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe.new ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/jrubyw.exe.new
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rake ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rake.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rake.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rdoc ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rdoc.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/rdoc.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ri ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ri.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ri.bat
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/ruby ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/testrb ]]
++ for __file in '"$@"'
++ [[ -x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/testrb.bat ]]
++ chmod +x /Users/davidacevedo/.rvm/rubies/jruby-1.7.11/bin/testrb.bat
